@@ -1,0 +1,434 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50ACDD8520D17BC300C2B780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDD8420D17BC300C2B780 /* AppDelegate.swift */; };
+		50ACDD8720D17BC300C2B780 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDD8620D17BC300C2B780 /* ViewController.swift */; };
+		50ACDD8A20D17BC300C2B780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ACDD8820D17BC300C2B780 /* Main.storyboard */; };
+		50ACDD8C20D17BC500C2B780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50ACDD8B20D17BC500C2B780 /* Assets.xcassets */; };
+		50ACDD8F20D17BC500C2B780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ACDD8D20D17BC500C2B780 /* LaunchScreen.storyboard */; };
+		ED5C2FA66B35B68579526BEB /* Pods_tempera_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB022A622C0385A4EA2DE43B /* Pods_tempera_ios.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		122A00E63BF0C89DB358EF26 /* Pods-tempera-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tempera-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-tempera-ios/Pods-tempera-ios.release.xcconfig"; sourceTree = "<group>"; };
+		50ACDD8120D17BC300C2B780 /* tempera-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tempera-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		50ACDD8420D17BC300C2B780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		50ACDD8620D17BC300C2B780 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		50ACDD8920D17BC300C2B780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50ACDD8B20D17BC500C2B780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		50ACDD8E20D17BC500C2B780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		50ACDD9020D17BC500C2B780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4F038CC2E03B476A89B75F2 /* Pods-tempera-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tempera-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tempera-ios/Pods-tempera-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		CB022A622C0385A4EA2DE43B /* Pods_tempera_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tempera_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50ACDD7E20D17BC300C2B780 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED5C2FA66B35B68579526BEB /* Pods_tempera_ios.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DF6AF90C41647BEB829AE39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B4F038CC2E03B476A89B75F2 /* Pods-tempera-ios.debug.xcconfig */,
+				122A00E63BF0C89DB358EF26 /* Pods-tempera-ios.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		34C8DB2524852B6B3F269E72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB022A622C0385A4EA2DE43B /* Pods_tempera_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50ACDD7820D17BC300C2B780 = {
+			isa = PBXGroup;
+			children = (
+				50ACDD8420D17BC300C2B780 /* AppDelegate.swift */,
+				50ACDD8B20D17BC500C2B780 /* Assets.xcassets */,
+				50ACDD9020D17BC500C2B780 /* Info.plist */,
+				50ACDD8320D17BC300C2B780 /* tempera-ios */,
+				50ACDD8220D17BC300C2B780 /* Products */,
+				0DF6AF90C41647BEB829AE39 /* Pods */,
+				34C8DB2524852B6B3F269E72 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		50ACDD8220D17BC300C2B780 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50ACDD8120D17BC300C2B780 /* tempera-ios.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50ACDD8320D17BC300C2B780 /* tempera-ios */ = {
+			isa = PBXGroup;
+			children = (
+				50ACDD9820D17BF300C2B780 /* controllers */,
+				50ACDD9720D17BEC00C2B780 /* views */,
+				50ACDD9620D17BE500C2B780 /* models */,
+			);
+			path = "tempera-ios";
+			sourceTree = "<group>";
+		};
+		50ACDD9620D17BE500C2B780 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		50ACDD9720D17BEC00C2B780 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				50ACDD8820D17BC300C2B780 /* Main.storyboard */,
+				50ACDD8D20D17BC500C2B780 /* LaunchScreen.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		50ACDD9820D17BF300C2B780 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				50ACDD8620D17BC300C2B780 /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50ACDD8020D17BC300C2B780 /* tempera-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50ACDD9320D17BC500C2B780 /* Build configuration list for PBXNativeTarget "tempera-ios" */;
+			buildPhases = (
+				5FAA8F8B068332C5CA06AE98 /* [CP] Check Pods Manifest.lock */,
+				50ACDD7D20D17BC300C2B780 /* Sources */,
+				50ACDD7E20D17BC300C2B780 /* Frameworks */,
+				50ACDD7F20D17BC300C2B780 /* Resources */,
+				366D2E2C01B8B6F26A512E4F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "tempera-ios";
+			productName = "tempera-ios";
+			productReference = 50ACDD8120D17BC300C2B780 /* tempera-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50ACDD7920D17BC300C2B780 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Jordan Capa";
+				TargetAttributes = {
+					50ACDD8020D17BC300C2B780 = {
+						CreatedOnToolsVersion = 9.3;
+					};
+				};
+			};
+			buildConfigurationList = 50ACDD7C20D17BC300C2B780 /* Build configuration list for PBXProject "tempera-ios" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50ACDD7820D17BC300C2B780;
+			productRefGroup = 50ACDD8220D17BC300C2B780 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50ACDD8020D17BC300C2B780 /* tempera-ios */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50ACDD7F20D17BC300C2B780 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50ACDD8F20D17BC500C2B780 /* LaunchScreen.storyboard in Resources */,
+				50ACDD8C20D17BC500C2B780 /* Assets.xcassets in Resources */,
+				50ACDD8A20D17BC300C2B780 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		366D2E2C01B8B6F26A512E4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-tempera-ios/Pods-tempera-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/ReachabilitySwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReachabilitySwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-tempera-ios/Pods-tempera-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FAA8F8B068332C5CA06AE98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-tempera-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50ACDD7D20D17BC300C2B780 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50ACDD8720D17BC300C2B780 /* ViewController.swift in Sources */,
+				50ACDD8520D17BC300C2B780 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		50ACDD8820D17BC300C2B780 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50ACDD8920D17BC300C2B780 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		50ACDD8D20D17BC500C2B780 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50ACDD8E20D17BC500C2B780 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50ACDD9120D17BC500C2B780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		50ACDD9220D17BC500C2B780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50ACDD9420D17BC500C2B780 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4F038CC2E03B476A89B75F2 /* Pods-tempera-ios.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 778N4TU227;
+				INFOPLIST_FILE = "tempera-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sistemas.tempera-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		50ACDD9520D17BC500C2B780 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 122A00E63BF0C89DB358EF26 /* Pods-tempera-ios.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 778N4TU227;
+				INFOPLIST_FILE = "tempera-ios/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sistemas.tempera-ios";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50ACDD7C20D17BC300C2B780 /* Build configuration list for PBXProject "tempera-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50ACDD9120D17BC500C2B780 /* Debug */,
+				50ACDD9220D17BC500C2B780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50ACDD9320D17BC500C2B780 /* Build configuration list for PBXNativeTarget "tempera-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50ACDD9420D17BC500C2B780 /* Debug */,
+				50ACDD9520D17BC500C2B780 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50ACDD7920D17BC300C2B780 /* Project object */;
+}
