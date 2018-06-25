@@ -7,23 +7,66 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5015A57720DB3B5B00187B57 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5015A57620DB3B5A00187B57 /* AuthManager.swift */; };
+		502AD7E620D213B200EBF15B /* CultivoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AD7E520D213B200EBF15B /* CultivoTableViewCell.swift */; };
+		502AD7E920D2142600EBF15B /* Cultivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AD7E820D2142600EBF15B /* Cultivo.swift */; };
+		502AD7EB20D2196C00EBF15B /* CultivosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AD7EA20D2196C00EBF15B /* CultivosViewController.swift */; };
+		502AD7ED20D219D500EBF15B /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AD7EC20D219D500EBF15B /* TableViewController.swift */; };
+		502AD7F120D21FBE00EBF15B /* NuevoCultivoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AD7F020D21FBE00EBF15B /* NuevoCultivoViewController.swift */; };
+		502AD7F320D23C1C00EBF15B /* ActualizarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AD7F220D23C1C00EBF15B /* ActualizarViewController.swift */; };
+		502AD7F520D2452D00EBF15B /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AD7F420D2452D00EBF15B /* MoreViewController.swift */; };
+		5058F66820D1B0E2007B5724 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5058F66720D1B0E2007B5724 /* RegisterViewController.swift */; };
+		5058F66A20D1B616007B5724 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5058F66920D1B616007B5724 /* Responses.swift */; };
 		50ACDD8520D17BC300C2B780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDD8420D17BC300C2B780 /* AppDelegate.swift */; };
-		50ACDD8720D17BC300C2B780 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDD8620D17BC300C2B780 /* ViewController.swift */; };
 		50ACDD8A20D17BC300C2B780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ACDD8820D17BC300C2B780 /* Main.storyboard */; };
 		50ACDD8C20D17BC500C2B780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50ACDD8B20D17BC500C2B780 /* Assets.xcassets */; };
 		50ACDD8F20D17BC500C2B780 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ACDD8D20D17BC500C2B780 /* LaunchScreen.storyboard */; };
+		50ACDD9A20D17EB000C2B780 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDD9920D17EB000C2B780 /* LoginViewController.swift */; };
+		50ACDD9D20D17FF000C2B780 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50ACDD9C20D17FF000C2B780 /* Info.plist */; };
+		50ACDDA220D1823800C2B780 /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDD9E20D1823800C2B780 /* Errors.swift */; };
+		50ACDDA320D1823800C2B780 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDD9F20D1823800C2B780 /* Constants.swift */; };
+		50ACDDA420D1823800C2B780 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDDA020D1823800C2B780 /* Categories.swift */; };
+		50ACDDA520D1823800C2B780 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDDA120D1823800C2B780 /* Utils.swift */; };
+		50ACDDAA20D187E300C2B780 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDDA720D187E300C2B780 /* Configuration.swift */; };
+		50ACDDAB20D187E400C2B780 /* ApiURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDDA820D187E300C2B780 /* ApiURL.swift */; };
+		50ACDDAC20D187E400C2B780 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDDA920D187E300C2B780 /* Environment.swift */; };
+		50ACDDAF20D1882300C2B780 /* RestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDDAE20D1882300C2B780 /* RestApi.swift */; };
+		50ACDDB220D1889B00C2B780 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDDB120D1889A00C2B780 /* Repository.swift */; };
+		50ACDDB420D188CC00C2B780 /* ErrorEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDDB320D188CC00C2B780 /* ErrorEntity.swift */; };
+		50ACDDB620D18AB000C2B780 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDDB520D18AB000C2B780 /* User.swift */; };
 		ED5C2FA66B35B68579526BEB /* Pods_tempera_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB022A622C0385A4EA2DE43B /* Pods_tempera_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		122A00E63BF0C89DB358EF26 /* Pods-tempera-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tempera-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-tempera-ios/Pods-tempera-ios.release.xcconfig"; sourceTree = "<group>"; };
+		5015A57620DB3B5A00187B57 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		502AD7E520D213B200EBF15B /* CultivoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivoTableViewCell.swift; sourceTree = "<group>"; };
+		502AD7E820D2142600EBF15B /* Cultivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cultivo.swift; sourceTree = "<group>"; };
+		502AD7EA20D2196C00EBF15B /* CultivosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivosViewController.swift; sourceTree = "<group>"; };
+		502AD7EC20D219D500EBF15B /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		502AD7F020D21FBE00EBF15B /* NuevoCultivoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NuevoCultivoViewController.swift; sourceTree = "<group>"; };
+		502AD7F220D23C1C00EBF15B /* ActualizarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarViewController.swift; sourceTree = "<group>"; };
+		502AD7F420D2452D00EBF15B /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		5058F66720D1B0E2007B5724 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		5058F66920D1B616007B5724 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		50ACDD8120D17BC300C2B780 /* tempera-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tempera-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50ACDD8420D17BC300C2B780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		50ACDD8620D17BC300C2B780 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		50ACDD8920D17BC300C2B780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50ACDD8B20D17BC500C2B780 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		50ACDD8E20D17BC500C2B780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		50ACDD9020D17BC500C2B780 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50ACDD9920D17EB000C2B780 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		50ACDD9C20D17FF000C2B780 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50ACDD9E20D1823800C2B780 /* Errors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Errors.swift; sourceTree = "<group>"; };
+		50ACDD9F20D1823800C2B780 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		50ACDDA020D1823800C2B780 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		50ACDDA120D1823800C2B780 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		50ACDDA720D187E300C2B780 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		50ACDDA820D187E300C2B780 /* ApiURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiURL.swift; sourceTree = "<group>"; };
+		50ACDDA920D187E300C2B780 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		50ACDDAE20D1882300C2B780 /* RestApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestApi.swift; sourceTree = "<group>"; };
+		50ACDDB120D1889A00C2B780 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		50ACDDB320D188CC00C2B780 /* ErrorEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorEntity.swift; sourceTree = "<group>"; };
+		50ACDDB520D18AB000C2B780 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B4F038CC2E03B476A89B75F2 /* Pods-tempera-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tempera-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-tempera-ios/Pods-tempera-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		CB022A622C0385A4EA2DE43B /* Pods_tempera_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_tempera_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -57,12 +100,20 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		502AD7E420D2139500EBF15B /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				502AD7E520D213B200EBF15B /* CultivoTableViewCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
 		50ACDD7820D17BC300C2B780 = {
 			isa = PBXGroup;
 			children = (
 				50ACDD8420D17BC300C2B780 /* AppDelegate.swift */,
 				50ACDD8B20D17BC500C2B780 /* Assets.xcassets */,
-				50ACDD9020D17BC500C2B780 /* Info.plist */,
+				50ACDD9C20D17FF000C2B780 /* Info.plist */,
 				50ACDD8320D17BC300C2B780 /* tempera-ios */,
 				50ACDD8220D17BC300C2B780 /* Products */,
 				0DF6AF90C41647BEB829AE39 /* Pods */,
@@ -81,35 +132,72 @@
 		50ACDD8320D17BC300C2B780 /* tempera-ios */ = {
 			isa = PBXGroup;
 			children = (
-				50ACDD9820D17BF300C2B780 /* controllers */,
-				50ACDD9720D17BEC00C2B780 /* views */,
-				50ACDD9620D17BE500C2B780 /* models */,
+				50ACDDA620D1824000C2B780 /* Resourses */,
+				50ACDDB020D1886700C2B780 /* Models */,
+				50ACDD9820D17BF300C2B780 /* Controllers */,
+				50ACDD9720D17BEC00C2B780 /* Views */,
+				50ACDD9620D17BE500C2B780 /* Data */,
 			);
 			path = "tempera-ios";
 			sourceTree = "<group>";
 		};
-		50ACDD9620D17BE500C2B780 /* models */ = {
+		50ACDD9620D17BE500C2B780 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				50ACDDB120D1889A00C2B780 /* Repository.swift */,
+				50ACDDA820D187E300C2B780 /* ApiURL.swift */,
+				50ACDDA720D187E300C2B780 /* Configuration.swift */,
+				50ACDDA920D187E300C2B780 /* Environment.swift */,
+				50ACDDAE20D1882300C2B780 /* RestApi.swift */,
+				5058F66920D1B616007B5724 /* Responses.swift */,
 			);
-			path = models;
+			path = Data;
 			sourceTree = "<group>";
 		};
-		50ACDD9720D17BEC00C2B780 /* views */ = {
+		50ACDD9720D17BEC00C2B780 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				50ACDD8820D17BC300C2B780 /* Main.storyboard */,
 				50ACDD8D20D17BC500C2B780 /* LaunchScreen.storyboard */,
 			);
-			path = views;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		50ACDD9820D17BF300C2B780 /* controllers */ = {
+		50ACDD9820D17BF300C2B780 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				50ACDD8620D17BC300C2B780 /* ViewController.swift */,
+				502AD7E420D2139500EBF15B /* CustomViews */,
+				50ACDD9920D17EB000C2B780 /* LoginViewController.swift */,
+				5058F66720D1B0E2007B5724 /* RegisterViewController.swift */,
+				502AD7EA20D2196C00EBF15B /* CultivosViewController.swift */,
+				502AD7EC20D219D500EBF15B /* TableViewController.swift */,
+				502AD7F020D21FBE00EBF15B /* NuevoCultivoViewController.swift */,
+				502AD7F220D23C1C00EBF15B /* ActualizarViewController.swift */,
+				502AD7F420D2452D00EBF15B /* MoreViewController.swift */,
 			);
-			path = controllers;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		50ACDDA620D1824000C2B780 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				5015A57620DB3B5A00187B57 /* AuthManager.swift */,
+				50ACDDA020D1823800C2B780 /* Categories.swift */,
+				50ACDD9F20D1823800C2B780 /* Constants.swift */,
+				50ACDD9E20D1823800C2B780 /* Errors.swift */,
+				50ACDDA120D1823800C2B780 /* Utils.swift */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		50ACDDB020D1886700C2B780 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				50ACDDB320D188CC00C2B780 /* ErrorEntity.swift */,
+				50ACDDB520D18AB000C2B780 /* User.swift */,
+				502AD7E820D2142600EBF15B /* Cultivo.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +230,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
-				ORGANIZATIONNAME = "Jordan Capa";
+				ORGANIZATIONNAME = "Jose Rojas";
 				TargetAttributes = {
 					50ACDD8020D17BC300C2B780 = {
 						CreatedOnToolsVersion = 9.3;
@@ -172,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50ACDD9D20D17FF000C2B780 /* Info.plist in Resources */,
 				50ACDD8F20D17BC500C2B780 /* LaunchScreen.storyboard in Resources */,
 				50ACDD8C20D17BC500C2B780 /* Assets.xcassets in Resources */,
 				50ACDD8A20D17BC300C2B780 /* Main.storyboard in Resources */,
@@ -234,8 +323,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50ACDD8720D17BC300C2B780 /* ViewController.swift in Sources */,
+				5058F66A20D1B616007B5724 /* Responses.swift in Sources */,
+				5015A57720DB3B5B00187B57 /* AuthManager.swift in Sources */,
+				50ACDDB420D188CC00C2B780 /* ErrorEntity.swift in Sources */,
+				502AD7F320D23C1C00EBF15B /* ActualizarViewController.swift in Sources */,
+				50ACDDA320D1823800C2B780 /* Constants.swift in Sources */,
+				50ACDDA220D1823800C2B780 /* Errors.swift in Sources */,
+				502AD7E920D2142600EBF15B /* Cultivo.swift in Sources */,
+				50ACDD9A20D17EB000C2B780 /* LoginViewController.swift in Sources */,
+				50ACDDA520D1823800C2B780 /* Utils.swift in Sources */,
+				502AD7EB20D2196C00EBF15B /* CultivosViewController.swift in Sources */,
+				50ACDDB620D18AB000C2B780 /* User.swift in Sources */,
 				50ACDD8520D17BC300C2B780 /* AppDelegate.swift in Sources */,
+				50ACDDAA20D187E300C2B780 /* Configuration.swift in Sources */,
+				50ACDDA420D1823800C2B780 /* Categories.swift in Sources */,
+				5058F66820D1B0E2007B5724 /* RegisterViewController.swift in Sources */,
+				502AD7ED20D219D500EBF15B /* TableViewController.swift in Sources */,
+				502AD7F520D2452D00EBF15B /* MoreViewController.swift in Sources */,
+				50ACDDAB20D187E400C2B780 /* ApiURL.swift in Sources */,
+				50ACDDAC20D187E400C2B780 /* Environment.swift in Sources */,
+				50ACDDAF20D1882300C2B780 /* RestApi.swift in Sources */,
+				502AD7E620D213B200EBF15B /* CultivoTableViewCell.swift in Sources */,
+				502AD7F120D21FBE00EBF15B /* NuevoCultivoViewController.swift in Sources */,
+				50ACDDB220D1889B00C2B780 /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,8 +492,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 778N4TU227;
-				INFOPLIST_FILE = "tempera-ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sistemas.tempera-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -398,8 +511,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 778N4TU227;
-				INFOPLIST_FILE = "tempera-ios/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.sistemas.tempera-ios";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
