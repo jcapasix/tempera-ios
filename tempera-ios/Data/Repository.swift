@@ -17,10 +17,8 @@ protocol Repository{
     
     func updateCultivo(cultivo:Cultivo, completion:@escaping (_ status:Bool?, _ message: String?, _ error:ErrorEntity?) -> Void)
     
+    func getTemp(completion: @escaping (Temperatura?, Cultivo?, ErrorEntity?) -> Void)
     
-//    func getMessages(completion:@escaping (_  messages:[MessageEntity]?, _ error:ErrorEntity?) -> Void)
-//    
-//    func getApplications(completion:@escaping (_  applications:[ApplicationEntity]?, _ error:ErrorEntity?) -> Void)
-//    
-//    func getMeetings(completion:@escaping (_  meetings:[MeetingEntity]?, _ error:ErrorEntity?) -> Void)
+    func activeCultivo(cultivo:Cultivo?, completion: @escaping (String?, ErrorEntity?) -> Void)
+    
 }

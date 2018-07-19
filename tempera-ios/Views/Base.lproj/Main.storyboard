@@ -266,6 +266,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="activeLabel" destination="JMT-QU-gSO" id="3RE-7Y-Yak"/>
                                             <outlet property="fechaFinalLabel" destination="QSb-SE-A9d" id="Ksq-jG-YiH"/>
                                             <outlet property="fechaInicialLabel" destination="tR7-oR-FBU" id="Lhb-Wx-tDv"/>
                                             <outlet property="nombreLabel" destination="vwz-73-Zgs" id="6fR-hK-BN5"/>
@@ -305,6 +306,50 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p5c-x8-C43" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3847.1999999999998" y="-52.623688155922046"/>
+        </scene>
+        <!--Inicio-->
+        <scene sceneID="M3T-8h-Gfk">
+            <objects>
+                <viewController id="9tj-2M-Nsf" customClass="HomeViewController" customModule="tempera_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uwb-Yu-yJg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30°" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OyW-lt-Ilw">
+                                <rect key="frame" x="16" y="208" width="343" height="157"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pera" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cZz-gg-Ioh">
+                                <rect key="frame" x="16" y="373" width="343" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="31"/>
+                                <color key="textColor" red="0.99215686270000003" green="0.33725490200000002" blue="0.25882352939999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="tempMaxLabel" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mDd-XR-PZQ">
+                                <rect key="frame" x="16" y="420" width="343" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="31"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="dh7-eS-Ocm"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Inicio" id="UrO-FD-jzL"/>
+                    <connections>
+                        <outlet property="tempLabel" destination="OyW-lt-Ilw" id="exS-w5-UnT"/>
+                        <outlet property="tempMaxLabel" destination="mDd-XR-PZQ" id="Ip8-n9-Xhd"/>
+                        <outlet property="tempNameLabel" destination="cZz-gg-Ioh" id="XpZ-9C-iCc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="03O-KG-5ps" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3845.5999999999999" y="-764.16791604197908"/>
         </scene>
         <!--Nuevo Cultivo-->
         <scene sceneID="5hX-Is-aCb">
@@ -432,7 +477,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FHd-zF-hlo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4814" y="-402"/>
+            <point key="canvasLocation" x="4814" y="-393"/>
         </scene>
         <!--More-->
         <scene sceneID="1iQ-5g-wIM">
@@ -472,6 +517,7 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
+                        <segue destination="oID-Qn-kSn" kind="relationship" relationship="viewControllers" id="8nl-t7-9hk"/>
                         <segue destination="CjX-Sr-1fh" kind="relationship" relationship="viewControllers" id="MvF-0q-5rq"/>
                         <segue destination="wD6-Ll-EZG" kind="relationship" relationship="viewControllers" id="7a9-zy-wqE"/>
                     </connections>
@@ -573,18 +619,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbe-qN-fIW">
-                                <rect key="frame" x="58" y="488" width="258" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.39203298089999999" green="0.76370233300000001" blue="0.38423693180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Guardar">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="saveButtonPressed:" destination="L50-Vz-TaP" eventType="touchUpInside" id="r2A-mT-dr5"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YoF-LM-LnI">
                                 <rect key="frame" x="58" y="180" width="258" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -668,6 +702,30 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T3i-hb-gga">
+                                <rect key="frame" x="58" y="488" width="112" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Activar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="activeButtonPressed:" destination="L50-Vz-TaP" eventType="touchUpInside" id="L8R-Vv-rjR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbe-qN-fIW">
+                                <rect key="frame" x="204" y="488" width="112" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.39203298089999999" green="0.76370233300000001" blue="0.38423693180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Guardar">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonPressed:" destination="L50-Vz-TaP" eventType="touchUpInside" id="r2A-mT-dr5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -675,6 +733,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Actualizar Cultivo" id="Up1-XG-jqB"/>
                     <connections>
+                        <outlet property="activeButton" destination="T3i-hb-gga" id="ug2-Yd-AiE"/>
                         <outlet property="fechaFinalTextField" destination="m3o-AL-aEI" id="QLF-83-ZST"/>
                         <outlet property="fechaFinalView" destination="sRJ-mf-Klv" id="vTi-ve-Bgc"/>
                         <outlet property="fechaInicialTextField" destination="l6k-js-2Ab" id="y0C-Xa-fST"/>
@@ -690,11 +749,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9fo-2p-QRs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4814" y="291"/>
+            <point key="canvasLocation" x="4813.6000000000004" y="290.10494752623691"/>
+        </scene>
+        <!--Inicio-->
+        <scene sceneID="OdA-qs-bfc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oID-Qn-kSn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Inicio" image="ico-home" id="Bnz-Bp-8yb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ad9-o3-E1c">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.39203298089999999" green="0.76370233300000001" blue="0.38423693180000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9tj-2M-Nsf" kind="relationship" relationship="rootViewController" id="0j1-Ur-srh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xq-O3-Q3P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2908" y="-764"/>
         </scene>
     </scenes>
     <resources>
         <image name="ico-close" width="22" height="22"/>
+        <image name="ico-home" width="32" height="32"/>
         <image name="ico-loto" width="100" height="100"/>
         <image name="ico-tab-loto" width="35" height="35"/>
     </resources>

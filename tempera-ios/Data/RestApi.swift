@@ -195,7 +195,6 @@ public class RestApi: Repository{
         
         
             let parameters: Parameters = [
-                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjViMjBhZWUzZTBjNGY4MTZiYjUwYmJkNCIsInVzZXJuYW1lIjoiamNhcGFzaXgiLCJwYXNzd29yZCI6IjEyMzQ1NmEiLCJhZG1pbiI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNTI4OTQ0MzMxfQ.23-SsVNzhpeDKttDwoxFLJHevVUHOqZAibb9qyORH6o",
                 "id": id
             ]
             
@@ -265,6 +264,81 @@ public class RestApi: Repository{
                 }
             }
         
+    }
+    
+    
+    func getTemp(completion: @escaping (Temperatura?, Cultivo?, ErrorEntity?) -> Void) {
+        var error:ErrorEntity?
+        var temperatura:Temperatura?
+        var cultivo:Cultivo?
+        
+        let url = ApiURL.URL_GET_TEM
+        print(url)
+        
+        self.alamofireManager?.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers:headers).responseObject { (response: DataResponse<TemperaturaResponse>) in
+            
+            switch response.result {
+            case .success:
+                
+                let data:TemperaturaResponse = response.result.value!
+                
+                if(response.response?.statusCode == 200){
+                    
+                    if(data.success)!{
+                        temperatura = data.temperatura!
+                        cultivo = data.cultivo!
+                        completion(temperatura, cultivo, error)
+                    }
+                    else{
+                        error = Errors.UPS
+                        completion(temperatura, cultivo, error)
+                    }
+                }
+                
+            case .failure( _):
+                completion(temperatura, cultivo, Errors.UPS)
+            }
+        }
+        
+    }
+    
+    func activeCultivo(cultivo:Cultivo?, completion: @escaping (String?, ErrorEntity?) -> Void){
+        
+        var error:ErrorEntity?
+        var message:String?
+        
+        let url = ApiURL.URL_ACTIVE_CULTIVO
+        print(url)
+        
+        let parameters : [ String : Any] = [
+            "id" : cultivo?.id ?? ""
+            ]
+        
+        print(parameters)
+        
+        self.alamofireManager?.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers:headers).responseObject { (response: DataResponse<BasicResponse>) in
+            
+            switch response.result {
+            case .success:
+                
+                let data:BasicResponse = response.result.value!
+                
+                if(response.response?.statusCode == 200){
+                    
+                    if(data.success)!{
+                        message = data.message
+                        completion(message, error)
+                    }
+                    else{
+                        error = Errors.UPS
+                        completion(message, error)
+                    }
+                }
+                
+            case .failure( _):
+                completion(message, Errors.UPS)
+            }
+        }
     }
     
     

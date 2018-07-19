@@ -12,4 +12,11 @@ class ApiURL{
     static let URL_DELETE_CULTIVO = AppEnvironment.configuration.serverURL + "/cultivos/delete"
     
     static let URL_UPDATE_CULTIVO = AppEnvironment.configuration.serverURL + "/cultivos/update"
+    
+    static let URL_GET_TEM = AppEnvironment.configuration.serverURL + "/temp"
+    
+    
+    static let URL_ACTIVE_CULTIVO = AppEnvironment.configuration.serverURL + "/cultivos/active"
+    
+    
 }

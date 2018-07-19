@@ -17,6 +17,8 @@
 		502AD7F520D2452D00EBF15B /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AD7F420D2452D00EBF15B /* MoreViewController.swift */; };
 		5058F66820D1B0E2007B5724 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5058F66720D1B0E2007B5724 /* RegisterViewController.swift */; };
 		5058F66A20D1B616007B5724 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5058F66920D1B616007B5724 /* Responses.swift */; };
+		50690D9620FFCE5C00EBBC59 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50690D9520FFCE5C00EBBC59 /* HomeViewController.swift */; };
+		50690D9820FFCF0700EBBC59 /* Temperatura.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50690D9720FFCF0700EBBC59 /* Temperatura.swift */; };
 		50ACDD8520D17BC300C2B780 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50ACDD8420D17BC300C2B780 /* AppDelegate.swift */; };
 		50ACDD8A20D17BC300C2B780 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50ACDD8820D17BC300C2B780 /* Main.storyboard */; };
 		50ACDD8C20D17BC500C2B780 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50ACDD8B20D17BC500C2B780 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		502AD7F420D2452D00EBF15B /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		5058F66720D1B0E2007B5724 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		5058F66920D1B616007B5724 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
+		50690D9520FFCE5C00EBBC59 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		50690D9720FFCF0700EBBC59 /* Temperatura.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temperatura.swift; sourceTree = "<group>"; };
 		50ACDD8120D17BC300C2B780 /* tempera-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "tempera-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50ACDD8420D17BC300C2B780 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50ACDD8920D17BC300C2B780 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -169,6 +173,7 @@
 				502AD7E420D2139500EBF15B /* CustomViews */,
 				50ACDD9920D17EB000C2B780 /* LoginViewController.swift */,
 				5058F66720D1B0E2007B5724 /* RegisterViewController.swift */,
+				50690D9520FFCE5C00EBBC59 /* HomeViewController.swift */,
 				502AD7EA20D2196C00EBF15B /* CultivosViewController.swift */,
 				502AD7EC20D219D500EBF15B /* TableViewController.swift */,
 				502AD7F020D21FBE00EBF15B /* NuevoCultivoViewController.swift */,
@@ -196,6 +201,7 @@
 				50ACDDB320D188CC00C2B780 /* ErrorEntity.swift */,
 				50ACDDB520D18AB000C2B780 /* User.swift */,
 				502AD7E820D2142600EBF15B /* Cultivo.swift */,
+				50690D9720FFCF0700EBBC59 /* Temperatura.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,9 +337,11 @@
 				50ACDDA220D1823800C2B780 /* Errors.swift in Sources */,
 				502AD7E920D2142600EBF15B /* Cultivo.swift in Sources */,
 				50ACDD9A20D17EB000C2B780 /* LoginViewController.swift in Sources */,
+				50690D9820FFCF0700EBBC59 /* Temperatura.swift in Sources */,
 				50ACDDA520D1823800C2B780 /* Utils.swift in Sources */,
 				502AD7EB20D2196C00EBF15B /* CultivosViewController.swift in Sources */,
 				50ACDDB620D18AB000C2B780 /* User.swift in Sources */,
+				50690D9620FFCE5C00EBBC59 /* HomeViewController.swift in Sources */,
 				50ACDD8520D17BC300C2B780 /* AppDelegate.swift in Sources */,
 				50ACDDAA20D187E300C2B780 /* Configuration.swift in Sources */,
 				50ACDDA420D1823800C2B780 /* Categories.swift in Sources */,

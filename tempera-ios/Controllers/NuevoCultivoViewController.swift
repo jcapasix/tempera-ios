@@ -47,7 +47,7 @@ class NuevoCultivoViewController: UIViewController, UITextFieldDelegate {
             Utils.showBasicAlert(title: "Error", message: "Verifique que los campos no estén vacios", view: self)
         }
         else{
-            let cultivo = Cultivo(id: "0", nombre: nombre, temperaturaMax: tempMax, temperaturaMin: tempMin, fechaInicial: fechaInicial, fechaFinal: fechaFinal)
+            let cultivo = Cultivo(id: "0", nombre: nombre, temperaturaMax: tempMax, temperaturaMin: tempMin, fechaInicial: fechaInicial, fechaFinal: fechaFinal, active: false)
             SVProgressHUD.show()
             RestApi.sharedInstance.createCultivo(cultivo: cultivo) { (success, message, error) in
                 SVProgressHUD.dismiss()

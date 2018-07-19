@@ -14,6 +14,7 @@ class ActualizarViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var fechaInicialView: UIView!
     @IBOutlet weak var fechaFinalView: UIView!
     @IBOutlet weak var saveButton: UIButton!
+    @IBOutlet weak var activeButton: UIButton!
     
     
     @IBOutlet weak var nombreTextField: UITextField!
@@ -60,7 +61,7 @@ class ActualizarViewController: UIViewController, UITextFieldDelegate {
             Utils.showBasicAlert(title: "Error", message: "Verifique que los campos no estén vacios", view: self)
         }
         else{
-            let cultivo = Cultivo(id: self.cultivo?.id, nombre: nombre, temperaturaMax: tempMax, temperaturaMin: tempMin, fechaInicial: fechaInicial, fechaFinal: fechaFinal)
+            let cultivo = Cultivo(id: self.cultivo?.id, nombre: nombre, temperaturaMax: tempMax, temperaturaMin: tempMin, fechaInicial: fechaInicial, fechaFinal: fechaFinal, active:false)
             SVProgressHUD.show()
             RestApi.sharedInstance.updateCultivo(cultivo: cultivo) { (success, message, error) in
                 SVProgressHUD.dismiss()
@@ -73,6 +74,36 @@ class ActualizarViewController: UIViewController, UITextFieldDelegate {
                 }
             }
         }
+    }
+    
+    
+    @IBAction func activeButtonPressed(_ sender: Any) {
+        
+        
+        let refreshAlert = UIAlertController(title: "Confirmación", message: "Está seguro que desea activar el cultivo?", preferredStyle: UIAlertControllerStyle.alert)
+        
+        refreshAlert.addAction(UIAlertAction(title: "Ok", style: .default, handler: { (action: UIAlertAction!) in
+            SVProgressHUD.show()
+            RestApi.sharedInstance.activeCultivo(cultivo: self.cultivo) { (message, error) in
+                
+                SVProgressHUD.dismiss()
+                if(error == nil){
+                    if(message != nil){
+                        Utils.showBasicAlert(title: "Información", message: message, view: self)
+                    }
+                    else{
+                        Utils.showCustomAlert(error: error, view: self)
+                    }
+                }
+            }
+        }))
+        
+        refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { (action: UIAlertAction!) in
+            print("Handle Cancel Logic here")
+        }))
+        
+        self.present(refreshAlert, animated: true, completion: nil)
+        
     }
     
     
@@ -98,7 +129,7 @@ class ActualizarViewController: UIViewController, UITextFieldDelegate {
         self.fechaInicialView.asRounded(Constants.RADIUS_BUTTON)
         self.fechaFinalView.asRounded(Constants.RADIUS_BUTTON)
         self.saveButton.asRounded(Constants.RADIUS_BUTTON)
-        
+        self.activeButton.asRounded(Constants.RADIUS_BUTTON)
         fechaInicialPickerView.datePickerMode = UIDatePickerMode.date
         fechaInicialPickerView.addTarget(self, action: #selector(NuevoCultivoViewController.InicialPickerValueChanged), for: UIControlEvents.valueChanged)
         

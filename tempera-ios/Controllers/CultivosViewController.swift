@@ -53,6 +53,12 @@ class CultivosViewController: UIViewController, UITableViewDelegate, UITableView
         return cell
      }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        performSegue(withIdentifier: "showUpdateCultivo", sender: self.cultivos[indexPath.row])
+    }
+    
+    
     func tableView(_ tableView: UITableView, editActionsForRowAt: IndexPath) -> [UITableViewRowAction]? {
         let editar = UITableViewRowAction(style: .normal, title: "Editar") { action, index in
             print("more button tapped")
@@ -125,6 +131,7 @@ class CultivosViewController: UIViewController, UITableViewDelegate, UITableView
             let view = segue.destination as! ActualizarViewController
             view.cultivo = cultivo
         }
+    
     }
     
 

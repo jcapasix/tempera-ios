@@ -9,6 +9,8 @@ class CultivoTableViewCell: UITableViewCell {
     @IBOutlet weak var temperaturaMinLabel: UILabel!
     @IBOutlet weak var fechaInicialLabel: UILabel!
     @IBOutlet weak var fechaFinalLabel: UILabel!
+    @IBOutlet weak var activeLabel: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,6 +33,16 @@ class CultivoTableViewCell: UITableViewCell {
         self.fechaInicialLabel.text = "Fecha Inicial: " + (cultivo.fechaInicial?.stringDateToString())!
         
         self.fechaFinalLabel.text = "Fecha Final: " + (cultivo.fechaFinal?.stringDateToString())!
+        
+        var color:String?
+        
+        if cultivo.active!{
+            color = "2196F3"
+        }
+        else{
+            color = "FFC107"
+        }
+        self.activeLabel.backgroundColor = UIColor(hex: color!)
     
     }
 
