@@ -22,4 +22,6 @@ protocol Repository{
     func activeCultivo(cultivo:Cultivo?, completion: @escaping (String?, ErrorEntity?) -> Void)
     
     func getReportes(completion:@escaping (_  reportes:[Reporte]?, _ error:ErrorEntity?) -> Void)
+    
+    func createReporte(cultivo:String, temp:String, completion:@escaping (_ status:Bool?, _ message: String?, _ error:ErrorEntity?) -> Void)
 }

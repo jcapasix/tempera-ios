@@ -48,7 +48,7 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITabBarController
                 self.TempNow = (temperatura?.value)!
                 
                 if ((self.TempNow > (cultivo?.temperaturaMax)!) && (self.TempNow != self.TempBand)){
-                    self.mostrarNotificacion(cultivo)
+                    self.mostrarNotificacion(cultivo, temperatura)
                     self.TempBand = self.TempNow
                     print("mostrarNotificacion ---> ")
                 }
@@ -89,7 +89,7 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITabBarController
     }
     
 
-    private func mostrarNotificacion(_ cultivo:Cultivo?) {
+    private func mostrarNotificacion(_ cultivo:Cultivo?, _ temp:Temperatura?) {
         // Create Notification Content
         let notificationContent = UNMutableNotificationContent()
         
@@ -108,6 +108,11 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITabBarController
         UNUserNotificationCenter.current().add(notificationRequest) { (error) in
             if let error = error {
                 print("Unable to Add Notification Request (\(error), \(error.localizedDescription))")
+            }
+            else{
+                RestApi.sharedInstance.createReporte(cultivo: (cultivo?.id)!, temp: (temp?.id)!, completion: { (true, message, error) in
+                    print(message)
+                })
             }
         }
     }

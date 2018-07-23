@@ -369,6 +369,46 @@ public class RestApi: Repository{
 
     }
     
+    func createReporte(cultivo:String, temp:String, completion:@escaping (_ status:Bool?, _ message: String?, _ error:ErrorEntity?) -> Void){
+        
+        var error:ErrorEntity?
+        var message:String?
+        
+        
+        let parameters: Parameters = [
+            "reporte": [
+                "cultivo": cultivo,
+                "temperatura":temp,
+            ]
+        ]
+        
+        let url = ApiURL.URL_CREATE_REPORTE
+        print(url)
+        
+        self.alamofireManager?.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers:headers).responseObject { (response: DataResponse<CreateResponse>) in
+            
+            switch response.result {
+            case .success:
+                
+                let data:CreateResponse = response.result.value!
+                
+                if(data.success)!{
+                    message = data.message
+                    completion(true, message, error)
+                }
+                else{
+                    error = data.error
+                    completion(false, message,error)
+                }
+                
+            case .failure( _):
+                completion(false, message,Errors.UPS)
+            }
+        }
+
+        
+    }
+    
     
     public func isThereNetworkConnection()->Bool{
         var isConnected:Bool

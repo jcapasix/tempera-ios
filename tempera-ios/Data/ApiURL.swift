@@ -15,4 +15,6 @@ class ApiURL{
     static let URL_GET_TEM = AppEnvironment.configuration.serverURL + "/temp"
     static let URL_ACTIVE_CULTIVO = AppEnvironment.configuration.serverURL + "/cultivos/active"
     static let URL_GET_REPORTES = AppEnvironment.configuration.serverURL + "/reportes"
+    
+    static let URL_CREATE_REPORTE = AppEnvironment.configuration.serverURL + "/reporte"
 }
