@@ -111,38 +111,33 @@ public class RestApi: Repository{
     func getCultivos(completion: @escaping ([Cultivo]?, ErrorEntity?) -> Void) {
         var error:ErrorEntity?
         var cultivos:[Cultivo]?
+
+        let url = ApiURL.URL_GET_CULTIVOS
+        print(url)
         
-        
-            let parameters : [ String : Any] = [
-                "token" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7Il9pZCI6IjViMjBhZWUzZTBjNGY4MTZiYjUwYmJkNCIsInVzZXJuYW1lIjoiamNhcGFzaXgiLCJwYXNzd29yZCI6IjEyMzQ1NmEiLCJhZG1pbiI6dHJ1ZSwiX192IjowfSwiaWF0IjoxNTI4OTQ0MzMxfQ.23-SsVNzhpeDKttDwoxFLJHevVUHOqZAibb9qyORH6o",
-            ]
+        self.alamofireManager?.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers:headers).responseObject { (response: DataResponse<CultivoResponse>) in
             
-            let url = ApiURL.URL_GET_CULTIVOS
-            print(url)
-            
-            self.alamofireManager?.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers:headers).responseObject { (response: DataResponse<CultivoResponse>) in
+            switch response.result {
+            case .success:
                 
-                switch response.result {
-                case .success:
+                let data:CultivoResponse = response.result.value!
+                
+                if(response.response?.statusCode == 200){
                     
-                    let data:CultivoResponse = response.result.value!
-                    
-                    if(response.response?.statusCode == 200){
-                        
-                        if(data.success)!{
-                            cultivos = data.cultivos
-                            completion(cultivos, error)
-                        }
-                        else{
-                            error = Errors.UPS
-                            completion(cultivos, error)
-                        }
+                    if(data.success)!{
+                        cultivos = data.cultivos
+                        completion(cultivos, error)
                     }
-                    
-                case .failure( _):
-                    completion(cultivos,Errors.UPS)
+                    else{
+                        error = Errors.UPS
+                        completion(cultivos, error)
+                    }
                 }
+                
+            case .failure( _):
+                completion(cultivos,Errors.UPS)
             }
+        }
 
     }
     
@@ -273,7 +268,7 @@ public class RestApi: Repository{
         var cultivo:Cultivo?
         
         let url = ApiURL.URL_GET_TEM
-        print(url)
+        //print(url)
         
         self.alamofireManager?.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers:headers).responseObject { (response: DataResponse<TemperaturaResponse>) in
             
@@ -339,6 +334,39 @@ public class RestApi: Repository{
                 completion(message, Errors.UPS)
             }
         }
+    }
+    
+    func getReportes(completion:@escaping (_  reportes:[Reporte]?, _ error:ErrorEntity?) -> Void){
+        var error:ErrorEntity?
+        var reportes:[Reporte]?
+        
+        let url = ApiURL.URL_GET_REPORTES
+        print(url)
+        
+        self.alamofireManager?.request(url, method: .post, parameters: nil, encoding: JSONEncoding.default, headers:headers).responseObject { (response: DataResponse<ReporteResponse>) in
+            
+            switch response.result {
+            case .success:
+                
+                let data:ReporteResponse = response.result.value!
+                
+                if(response.response?.statusCode == 200){
+                    
+                    if(data.success)!{
+                        reportes = data.reportes
+                        completion(reportes, error)
+                    }
+                    else{
+                        error = Errors.UPS
+                        completion(reportes, error)
+                    }
+                }
+                
+            case .failure( _):
+                completion(reportes,Errors.UPS)
+            }
+        }
+
     }
     
     

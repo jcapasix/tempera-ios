@@ -9,7 +9,6 @@
 import Foundation
 import ObjectMapper
 
-
 public class TemperaturaResponse: Mappable  {
     var success:Bool?
     var temperatura:Temperatura?

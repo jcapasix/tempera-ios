@@ -17,44 +17,25 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITabBarController
     @IBOutlet weak var tempMaxLabel: UILabel!
     
     var isCallService = true
+    var TempNow = 0
+    var TempBand = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         initNotificationSetupCheck()
+        //self.mostrarNotificacion()
         self.tabBarController?.delegate = self
-        
-        
-        let notification = UNMutableNotificationContent()
-        notification.title = "Danger Will Robinson"
-        notification.subtitle = "Something This Way Comes"
-        notification.body = "I need to tell you something, but first read this."
-        
-        let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 5, repeats: false)
-        let request = UNNotificationRequest(identifier: "notification1", content: notification, trigger: notificationTrigger)
-        
-        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
-        
+        UNUserNotificationCenter.current().delegate = self
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+
     
     override func viewWillAppear(_ animated: Bool) {
         self.isCallService = true
         self.getData()
-    }
-
-    func initNotificationSetupCheck() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert])
-        { (success, error) in
-            if success {
-                print("Permission Granted")
-            } else {
-                print("There was a problem!")
-            }
-        }
     }
     
     func getData(){
@@ -63,6 +44,14 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITabBarController
                 self.tempLabel.text = "\(String(describing: temperatura?.value ?? 0))°"
                 self.tempNameLabel.text = cultivo?.nombre
                 self.tempMaxLabel.text = "Temp Máxima: \(String(describing: cultivo?.temperaturaMax ?? 0))°"
+                
+                self.TempNow = (temperatura?.value)!
+                
+                if ((self.TempNow > (cultivo?.temperaturaMax)!) && (self.TempNow != self.TempBand)){
+                    self.mostrarNotificacion(cultivo)
+                    self.TempBand = self.TempNow
+                    print("mostrarNotificacion ---> ")
+                }
                 
                 if self.isCallService{
                     self.getData()
@@ -84,15 +73,51 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITabBarController
         }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - Private Methods
+    
+    
+    private func initNotificationSetupCheck() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert])
+        { (success, error) in
+            if success {
+                print("Permission Granted")
+            } else {
+                print("There was a problem!")
+            }
+        }
     }
-    */
+    
 
+    private func mostrarNotificacion(_ cultivo:Cultivo?) {
+        // Create Notification Content
+        let notificationContent = UNMutableNotificationContent()
+        
+        // Configure Notification Content
+        notificationContent.title = "Alerta"
+        notificationContent.subtitle = "Temperatura Máxima - \(cultivo?.nombre! ?? "")"
+        notificationContent.body = "La temperatura máxima ha sido superada."
+        
+        // Add Trigger
+        let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 1.0, repeats: false)
+        
+        // Create Notification Request
+        let notificationRequest = UNNotificationRequest(identifier: "cocoacasts_local_notification", content: notificationContent, trigger: notificationTrigger)
+        
+        // Add Request to User Notification Center
+        UNUserNotificationCenter.current().add(notificationRequest) { (error) in
+            if let error = error {
+                print("Unable to Add Notification Request (\(error), \(error.localizedDescription))")
+            }
+        }
+    }
+
+}
+
+
+extension HomeViewController: UNUserNotificationCenterDelegate {
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert])
+    }
 }

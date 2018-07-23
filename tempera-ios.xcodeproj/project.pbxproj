@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5015A57720DB3B5B00187B57 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5015A57620DB3B5A00187B57 /* AuthManager.swift */; };
+		502993C9210579E400C21F5E /* ReporteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502993C8210579E400C21F5E /* ReporteTableViewCell.swift */; };
+		502993CB21057B8400C21F5E /* Reporte.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502993CA21057B8400C21F5E /* Reporte.swift */; };
+		502993CD21057D7900C21F5E /* ReporteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502993CC21057D7900C21F5E /* ReporteViewController.swift */; };
 		502AD7E620D213B200EBF15B /* CultivoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AD7E520D213B200EBF15B /* CultivoTableViewCell.swift */; };
 		502AD7E920D2142600EBF15B /* Cultivo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AD7E820D2142600EBF15B /* Cultivo.swift */; };
 		502AD7EB20D2196C00EBF15B /* CultivosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502AD7EA20D2196C00EBF15B /* CultivosViewController.swift */; };
@@ -42,6 +45,9 @@
 /* Begin PBXFileReference section */
 		122A00E63BF0C89DB358EF26 /* Pods-tempera-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-tempera-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-tempera-ios/Pods-tempera-ios.release.xcconfig"; sourceTree = "<group>"; };
 		5015A57620DB3B5A00187B57 /* AuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		502993C8210579E400C21F5E /* ReporteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporteTableViewCell.swift; sourceTree = "<group>"; };
+		502993CA21057B8400C21F5E /* Reporte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reporte.swift; sourceTree = "<group>"; };
+		502993CC21057D7900C21F5E /* ReporteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporteViewController.swift; sourceTree = "<group>"; };
 		502AD7E520D213B200EBF15B /* CultivoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivoTableViewCell.swift; sourceTree = "<group>"; };
 		502AD7E820D2142600EBF15B /* Cultivo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cultivo.swift; sourceTree = "<group>"; };
 		502AD7EA20D2196C00EBF15B /* CultivosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivosViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				502AD7E520D213B200EBF15B /* CultivoTableViewCell.swift */,
+				502993C8210579E400C21F5E /* ReporteTableViewCell.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -179,6 +186,7 @@
 				502AD7F020D21FBE00EBF15B /* NuevoCultivoViewController.swift */,
 				502AD7F220D23C1C00EBF15B /* ActualizarViewController.swift */,
 				502AD7F420D2452D00EBF15B /* MoreViewController.swift */,
+				502993CC21057D7900C21F5E /* ReporteViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -202,6 +210,7 @@
 				50ACDDB520D18AB000C2B780 /* User.swift */,
 				502AD7E820D2142600EBF15B /* Cultivo.swift */,
 				50690D9720FFCF0700EBBC59 /* Temperatura.swift */,
+				502993CA21057B8400C21F5E /* Reporte.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -331,6 +340,7 @@
 			files = (
 				5058F66A20D1B616007B5724 /* Responses.swift in Sources */,
 				5015A57720DB3B5B00187B57 /* AuthManager.swift in Sources */,
+				502993CD21057D7900C21F5E /* ReporteViewController.swift in Sources */,
 				50ACDDB420D188CC00C2B780 /* ErrorEntity.swift in Sources */,
 				502AD7F320D23C1C00EBF15B /* ActualizarViewController.swift in Sources */,
 				50ACDDA320D1823800C2B780 /* Constants.swift in Sources */,
@@ -338,6 +348,7 @@
 				502AD7E920D2142600EBF15B /* Cultivo.swift in Sources */,
 				50ACDD9A20D17EB000C2B780 /* LoginViewController.swift in Sources */,
 				50690D9820FFCF0700EBBC59 /* Temperatura.swift in Sources */,
+				502993C9210579E400C21F5E /* ReporteTableViewCell.swift in Sources */,
 				50ACDDA520D1823800C2B780 /* Utils.swift in Sources */,
 				502AD7EB20D2196C00EBF15B /* CultivosViewController.swift in Sources */,
 				50ACDDB620D18AB000C2B780 /* User.swift in Sources */,
@@ -351,6 +362,7 @@
 				50ACDDAB20D187E400C2B780 /* ApiURL.swift in Sources */,
 				50ACDDAC20D187E400C2B780 /* Environment.swift in Sources */,
 				50ACDDAF20D1882300C2B780 /* RestApi.swift in Sources */,
+				502993CB21057B8400C21F5E /* Reporte.swift in Sources */,
 				502AD7E620D213B200EBF15B /* CultivoTableViewCell.swift in Sources */,
 				502AD7F120D21FBE00EBF15B /* NuevoCultivoViewController.swift in Sources */,
 				50ACDDB220D1889B00C2B780 /* Repository.swift in Sources */,
