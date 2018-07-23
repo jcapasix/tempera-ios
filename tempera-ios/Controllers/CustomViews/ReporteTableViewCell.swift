@@ -26,9 +26,9 @@ class ReporteTableViewCell: UITableViewCell {
     
     func loadData(_ index:Int, _ reporte:Reporte){
         self.codigoLabel.text = "C \(index)"
-        self.nombreCultivoLabel.text = "Nombre: \(String(describing: reporte.cultivo?.nombre! ?? ""))"
-        self.numeroAlertasLabel.text = "Temperatura Máxima: \(String(describing: reporte.alertas!))"
-        self.promedioTemperaturaLabel.text = "Temperatura Mínima: \(String(describing: reporte.temperatura!))"
+        self.nombreCultivoLabel.text = "Nombre Cultivo: \(String(describing: reporte.cultivo?.nombre! ?? ""))"
+        self.numeroAlertasLabel.text = "Número de Alertas: \(String(describing: reporte.alertas!))"
+        self.promedioTemperaturaLabel.text = "Temperatura Promedio: \(String(describing: reporte.temperatura!))"
     }
 
 }
