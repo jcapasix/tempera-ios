@@ -27,8 +27,8 @@ class CultivoTableViewCell: UITableViewCell {
         //self.cell = application
         
         self.nombreLabel.text = "Nombre: \(String(describing: cultivo.nombre!))"
-        self.temperaturaMaxLabel.text = "Temperatura Máxima: \(String(describing: cultivo.temperaturaMax!))"
-        self.temperaturaMinLabel.text = "Temperatura Mínima: \(String(describing: cultivo.temperaturaMin!))"
+        self.temperaturaMaxLabel.text = "Temp. Máxima: \(String(describing: cultivo.temperaturaMax!))"
+        self.temperaturaMinLabel.text = "Temp. Mínima: \(String(describing: cultivo.temperaturaMin!))"
         
         self.fechaInicialLabel.text = "Fecha Inicial: " + (cultivo.fechaInicial?.stringDateToString())!
         

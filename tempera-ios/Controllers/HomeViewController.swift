@@ -15,6 +15,7 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITabBarController
     @IBOutlet weak var tempNameLabel: UILabel!
     
     @IBOutlet weak var tempMaxLabel: UILabel!
+    @IBOutlet weak var tempMinLabel: UILabel!
     
     var isCallService = true
     var TempNow = 0
@@ -44,11 +45,20 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITabBarController
                 self.tempLabel.text = "\(String(describing: temperatura?.value ?? 0))°"
                 self.tempNameLabel.text = cultivo?.nombre
                 self.tempMaxLabel.text = "Temp Máxima: \(String(describing: cultivo?.temperaturaMax ?? 0))°"
+                self.tempMinLabel.text = "Temp Mínima: \(String(describing: cultivo?.temperaturaMin ?? 0))°"
                 
                 self.TempNow = (temperatura?.value)!
                 
-                if ((self.TempNow > (cultivo?.temperaturaMax)!) && (self.TempNow != self.TempBand)){
-                    self.mostrarNotificacion(cultivo, temperatura)
+                if (((self.TempNow > (cultivo?.temperaturaMax)!) || (self.TempNow < (cultivo?.temperaturaMin)!)) &&      (self.TempNow != self.TempBand)){
+                    
+                    if(self.TempNow > (cultivo?.temperaturaMax)!){
+                        self.mostrarNotificacion(cultivo, temperatura, "Máxima")
+                    }
+                    else{
+                        self.mostrarNotificacion(cultivo, temperatura, "Mínima")
+                    }
+                    
+                    
                     self.TempBand = self.TempNow
                     print("mostrarNotificacion ---> ")
                 }
@@ -89,14 +99,21 @@ class HomeViewController: UIViewController, UITabBarDelegate, UITabBarController
     }
     
 
-    private func mostrarNotificacion(_ cultivo:Cultivo?, _ temp:Temperatura?) {
+    private func mostrarNotificacion(_ cultivo:Cultivo?, _ temp:Temperatura?, _ max:String?) {
         // Create Notification Content
         let notificationContent = UNMutableNotificationContent()
         
         // Configure Notification Content
         notificationContent.title = "Alerta"
-        notificationContent.subtitle = "Temperatura Máxima - \(cultivo?.nombre! ?? "")"
-        notificationContent.body = "La temperatura máxima ha sido superada."
+        notificationContent.subtitle = "Temperatura - \(String(describing: max ?? "")) \(cultivo?.nombre! ?? "")"
+        
+        if (max == "Máxima"){
+            notificationContent.body = "La temperatura Máxima ha superado el límite."
+        }
+        else{
+            notificationContent.body = "La temperatura Mínima está por debajo del límite"
+        }
+        
         
         // Add Trigger
         let notificationTrigger = UNTimeIntervalNotificationTrigger(timeInterval: 1.0, repeats: false)

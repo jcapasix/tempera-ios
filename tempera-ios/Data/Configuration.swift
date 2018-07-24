@@ -15,12 +15,12 @@ public protocol Configuration {
 }
 
 public struct ProductionConfig: Configuration {
-    public static let serverURL         = "http://192.168.88.136:3000/api"
+    public static let serverURL         = "http://192.168.0.43:3000/api"
     public static let environment       = Enviroment.PROD.rawValue
 }
 
 public struct DevelopConfig: Configuration {
-    public static let serverURL         = "http://192.168.88.136:3000/api"
+    public static let serverURL         = "http://192.168.0.43:3000/api"
     public static let environment       = Enviroment.DEV.rawValue
 }
 
